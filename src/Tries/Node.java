@@ -17,10 +17,19 @@ public class Node {
 		children[getCharIndex(c)] = node;
 	}
 
+	/**Add Item to trie
+	 * 
+	 * @param s
+	 */
 	public void add(String s) {
 		add(s, 0);
 	}
 
+	/**Add item to trie
+	 * 
+	 * @param s
+	 * @param index
+	 */
 	private void add(String s, int index) {
 		size++;
 		if (index == s.length())

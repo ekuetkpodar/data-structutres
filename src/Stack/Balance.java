@@ -1,7 +1,11 @@
 package Stack;
 
 import java.util.Stack;
-
+/**Check if a string is balanced are not
+ * 
+ * @author Ekue Kpodar
+ *
+ */
 public class Balance {
 	public static char[][] TOKENS = { { '{', '}' }, { '[', ']' }, { '(', ')' } };
 

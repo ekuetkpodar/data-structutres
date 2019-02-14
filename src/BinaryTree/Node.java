@@ -1,13 +1,26 @@
 package BinaryTree;
+/**Create A Binary Tree
+ * 
+ * @author Ekue Kpodar
+ *
+ */
 
 public class Node {
 	Node left, right;
 	int data;
 
+	/**Binary Tree Constructor
+	 * 
+	 * @param data
+	 */
 	public Node(int data) {
 		this.data = data;
 	}
 
+	/**Insert Item into tree
+	 * 
+	 * @param value
+	 */
 	public void insert(int value) {
 		if (value <= data) {
 			if (left == null) {
@@ -24,6 +37,13 @@ public class Node {
 		}
 	}
 
+	/**Check if a given item is in a tree
+	 * 
+	 * @param value
+	 * 			The  value of the node
+	 * @return
+	 * 		tree if the item is in the list
+	 */
 	public boolean contains(int value) {
 		if (value == data) {
 			return true;
@@ -42,6 +62,9 @@ public class Node {
 		}
 	}
 
+	/**Print item in a array from left to right
+	 * 
+	 */
 	public void printInorder() {
 		if (left != null) {
 			left.printInorder();
@@ -54,6 +77,9 @@ public class Node {
 		}
 	}
 
+	/**Print item in a array right to left
+	 * 
+	 */
 	public void printPostOrder() {
 		if (right != null) {
 			right.printPostOrder();
